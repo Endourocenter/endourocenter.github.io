@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Городской центр эндоскопической урологии и новых технологий Санкт-Петербурга</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=8">
+  <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-left">
+      <a href="index.html"><img src="images/logo.png" alt="Логотип" class="header-logo"></a>
+      <span class="header-brand"><a href="index.html">Городской центр эндоскопической урологии и новых технологий Санкт-Петербурга</a></span>
+    </div>
+    <nav class="header-nav">
+      <a href="index.html" class="nav-link active">Главная</a>
+      <a href="directions.html" class="nav-link">Направления</a>
+      <a href="doctors.html" class="nav-link">Врачи</a>
+      <a href="news.html" class="nav-link">Новости</a>
+      <a href="chief.html" class="nav-link">Главный внешний специалист</a>
+    </nav>
+    <div class="header-right">
+      <a href="tel:+78125761157" class="header-phone">+7 (812) 57-611-57</a>
+      <a href="tel:+78125761157" class="btn btn-white">Записаться</a>
+      <button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- HERO VIDEO -->
+  <section class="hero hero-video" style="height:calc(100vh - 64px); margin:0; padding:0; overflow:hidden; background:#FFFFFF;">
+    <video id="heroVideo" autoplay muted playsinline onended="this.pause(); this.currentTime = this.duration;" style="width:100%; height:100%; object-fit:cover; display:block; margin-top:64px;">
+      <source src="images/hero-video.mp4" type="video/mp4">
+    </video>
+  </section>
+
+  <!-- FOUNDATION / ABOUT -->
+  <section class="foundation" style="background:#FFFFFF;">
+    <div class="outlines">
+      <div class="outline outline-1"></div>
+      <div class="outline outline-2"></div>
+      <div class="outline outline-3"></div>
+    </div>
+    <div class="section-bg-glow"></div>
+    <div class="foundation-grid">
+      <div>
+        <div class="section-label reveal">О ЦЕНТРЕ</div>
+        <h2 class="foundation-heading reveal">Городской центр эндоскопической урологии и новых технологий</h2>
+        <div class="foundation-image-wrap reveal">
+          <img src="images/hero-surgery.jpg" alt="Операционная" class="foundation-image">
+          <div class="foundation-image-overlay">
+            <span class="foundation-image-stat">374</span>
+            <span class="foundation-image-label">коек в стационаре</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="foundation-text reveal">
+          Центр был создан по Распоряжению Комитета по здравоохранению Администрации Санкт-Петербурга
+          для оказания высокотехнологичной помощи населению с заболеваниями урологического профиля.
+          Предоставляем бесплатное лечение при наличии полиса обязательного страхования (ОМС).
+        </p>
+        <div class="about-info-box reveal">
+          <p>Предоставляем <strong>бесплатное лечение</strong> при наличии полиса обязательного страхования (ОМС)</p>
+        </div>
+        <div class="reveal" style="margin-top:32px;">
+          <span class="section-label">ОСНОВНЫЕ НАПРАВЛЕНИЯ</span>
+          <ul style="list-style:none;margin-top:16px;">
+            <li style="padding:8px 0;color:var(--text-secondary);">&#8226; Доброкачественная гиперплазия предстательной железы</li>
+            <li style="padding:8px 0;color:var(--text-secondary);">&#8226; Лечение мочекаменной болезни</li>
+            <li style="padding:8px 0;color:var(--text-secondary);">&#8226; Онкоурология</li>
+            <li style="padding:8px 0;color:var(--text-secondary);">&#8226; Реконструктивная урология</li>
+            <li style="padding:8px 0;color:var(--text-secondary);">&#8226; Репродуктивная урология</li>
+            <li style="padding:8px 0;color:var(--text-secondary);">&#8226; Функциональная урология, нейроурология и уродинамика</li>
+          </ul>
+          <a href="directions.html" class="btn btn-blue" style="margin-top:20px;">Наши направления</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADVANTAGES -->
+  <section class="advantages">
+    <div class="advantages-container">
+      <div class="section-label reveal" style="justify-content:center;">ПРЕИМУЩЕСТВА</div>
+      <h2 class="advantages-heading reveal">Почему выбирают нас</h2>
+      <p class="advantages-desc reveal">Наш принцип — максимально бороться с болью без разреза</p>
+      <div class="advantages-grid">
+        <div class="advantage-card reveal">
+          <div class="advantage-card-bg" style="background-image:url('images/surgery.jpg')"></div>
+          <div class="advantage-card-content">
+            <div class="advantage-card-number">01</div>
+            <h3 class="advantage-card-title">Высокая квалификация</h3>
+            <p class="advantage-card-text">Доктора и кандидаты медицинских наук, профессора СПбГУ и СЗГМУ. Непрерывное повышение квалификации.</p>
+            <div class="advantage-card-line"></div>
+          </div>
+        </div>
+        <div class="advantage-card reveal">
+          <div class="advantage-card-bg" style="background-image:url('images/robot-surgery.jpg')"></div>
+          <div class="advantage-card-content">
+            <div class="advantage-card-number">02</div>
+            <h3 class="advantage-card-title">Передовые технологии</h3>
+            <p class="advantage-card-text">HoLEP, робот-ассистированная хирургия, лазерная литотрипсия, Rezum-терапия.</p>
+            <div class="advantage-card-line"></div>
+          </div>
+        </div>
+        <div class="advantage-card reveal">
+          <div class="advantage-card-bg" style="background-image:url('images/robot-da-vinci.jpg')"></div>
+          <div class="advantage-card-content">
+            <div class="advantage-card-number">03</div>
+            <h3 class="advantage-card-title">Современное оборудование</h3>
+            <p class="advantage-card-text">HDTV лапароскопия, эндоскопическое оборудование, робот-хирургия Da Vinci.</p>
+            <div class="advantage-card-line"></div>
+          </div>
+        </div>
+        <div class="advantage-card reveal">
+          <div class="advantage-card-bg" style="background-image:url('images/scientific.jpg')"></div>
+          <div class="advantage-card-content">
+            <div class="advantage-card-number">04</div>
+            <h3 class="advantage-card-title">Минимальная травматичность</h3>
+            <p class="advantage-card-text">Малоинвазивные технологии — минимум боли, быстрое восстановление и возвращение к нормальной жизни.</p>
+            <div class="advantage-card-line"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIRECTIONS (compact list) -->
+  <section class="directions-home" style="background:#FFFFFF;">
+    <div class="directions-header">
+      <h2 class="reveal">Направления</h2>
+      <div style="text-align:right">
+        <p class="reveal">Комплексное лечение заболеваний урологического профиля с применением передовых малоинвазивных технологий</p>
+      </div>
+    </div>
+    <div class="directions-list-compact">
+      <a href="directions.html#dgpzh" class="direction-item-compact reveal">
+        <div class="direction-item-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <div class="direction-item-text">
+          <h4>Доброкачественная гиперплазия предстательной железы</h4>
+          <p>HoLEP, TUR, лазерная энуклеация</p>
+        </div>
+        <span class="direction-item-arrow">&#8594;</span>
+      </a>
+      <a href="directions.html#urolithiasis" class="direction-item-compact reveal">
+        <div class="direction-item-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <div class="direction-item-text">
+          <h4>Лечение мочекаменной болезни</h4>
+          <p>ДЛТ, контактная литотрипсия, перкутанная нефролитотрипсия</p>
+        </div>
+        <span class="direction-item-arrow">&#8594;</span>
+      </a>
+      <a href="directions.html#oncology" class="direction-item-compact reveal">
+        <div class="direction-item-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="direction-item-text">
+          <h4>Онкоурология</h4>
+          <p>Лечение рака почки, мочевого пузыря, простаты</p>
+        </div>
+        <span class="direction-item-arrow">&#8594;</span>
+      </a>
+      <a href="directions.html#reconstructive" class="direction-item-compact reveal">
+        <div class="direction-item-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <div class="direction-item-text">
+          <h4>Реконструктивная урология</h4>
+          <p>Пластика мочеточника, лечение стриктур, недержания</p>
+        </div>
+        <span class="direction-item-arrow">&#8594;</span>
+      </a>
+      <a href="directions.html#reproductive" class="direction-item-compact reveal">
+        <div class="direction-item-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <div class="direction-item-text">
+          <h4>Репродуктивная урология</h4>
+          <p>Варикоцеле, эректильная дисфункция, мужское бесплодие</p>
+        </div>
+        <span class="direction-item-arrow">&#8594;</span>
+      </a>
+      <a href="directions.html#functional" class="direction-item-compact reveal">
+        <div class="direction-item-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <div class="direction-item-text">
+          <h4>Функциональная урология и уродинамика</h4>
+          <p>Недержание мочи, нейрогенный пузырь, КУДИ</p>
+        </div>
+        <span class="direction-item-arrow">&#8594;</span>
+      </a>
+    </div>
+    <div style="text-align:center; margin-top:40px;">
+      <a href="directions.html" class="btn btn-blue">Все направления</a>
+    </div>
+  </section>
+
+  <!-- TECH SHOWCASE -->
+  <section class="section" style="background:var(--bg-secondary); padding:100px 48px;">
+    <div class="container" style="position:relative;z-index:1">
+      <div class="tech-showcase reveal">
+        <div class="tech-showcase-grid">
+          <div class="tech-showcase-content">
+            <span class="section-label">Роботизированная хирургия</span>
+            <h2>Центр роботической хирургии</h2>
+            <p>Робот-ассистированная хирургия открывает новые возможности в лечении сложных урологических заболеваний. Хирургический робот da Vinci обеспечивает высочайшую точность движений, 3D-визуализацию и минимальную травматичность.</p>
+            <div style="margin-top: 20px;">
+              <span class="tech-tag">Радикальная простатэктомия</span>
+              <span class="tech-tag">Кистэктомия</span>
+              <span class="tech-tag">Паренхимосохраняющие операции</span>
+              <span class="tech-tag">Лимфаденэктомия</span>
+            </div>
+            <br>
+            <a href="directions.html" class="btn btn-outline">Узнать больше</a>
+          </div>
+          <div class="tech-showcase-img">
+            <img src="images/grok-image-22.png" alt="Хирургический робот da Vinci">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-section">
+    <h2 class="reveal" style="text-align:center; margin-bottom:60px; font-size:clamp(28px,3vw,40px); font-weight:300;">Центр в цифрах</h2>
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <div class="stat-number">15+</div>
+          <div class="stat-label">лет работы центра</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-number">30+</div>
+          <div class="stat-label">врачей-специалистов</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-number">1000+</div>
+          <div class="stat-label">операций ежегодно</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-number">6</div>
+          <div class="stat-label">основных направлений</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCIENTIFIC DEPARTMENT -->
+  <section class="section" style="background:#FFFFFF; padding:120px 48px 160px;">
+    <div class="section-bg-glow"></div>
+    <div class="container" style="position:relative;z-index:1">
+      <div class="about-grid">
+        <div class="about-image reveal">
+          <img src="images/scientific.jpg" alt="Научная деятельность">
+        </div>
+        <div class="about-content reveal">
+          <span class="section-label">Научная деятельность</span>
+          <h2>Научный отдел</h2>
+          <p>Центр активно занимается научно-исследовательской работой, внедрением новых методов диагностики и лечения. Результаты исследований публикуются в ведущих российских и международных журналах.</p>
+          <p>Гусейнов Руслан Гусейнович — заместитель главного врача по научной деятельности, кандидат медицинских наук, координирует все научные проекты центра.</p>
+          <div class="about-info-box">
+            <p><strong>Скрябин Олег Николаевич</strong> — научный руководитель Центра</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSROOM -->
+  <section class="newsroom" style="background:var(--bg-secondary);">
+    <div class="container">
+      <h2 class="reveal">Новости</h2>
+      <div class="news-grid">
+        <div class="news-card reveal">
+          <img src="images/news-1.jpg" alt="" class="news-card-img">
+          <div class="news-card-content">
+            <div class="news-card-tags">
+              <span class="news-tag">СОБЫТИЕ</span>
+              <span class="news-tag">26.06.2026</span>
+            </div>
+            <h3 class="news-card-title">Премьера сериала «ИИ будущего»</h3>
+            <p class="news-card-desc">Попов С.В. стал экспертом документального фильма и рассказал о применении ИИ и робототехники в медицине.</p>
+          </div>
+        </div>
+        <div class="news-card reveal">
+          <img src="images/news-2.jpg" alt="" class="news-card-img">
+          <div class="news-card-content">
+            <div class="news-card-tags">
+              <span class="news-tag">НАГРАДА</span>
+              <span class="news-tag">19.06.2026</span>
+            </div>
+            <h3 class="news-card-title">Почетная грамота Законодательного Собрания СПб</h3>
+            <p class="news-card-desc">Коллектив Клинической больницы Святителя Луки награжден за вклад в развитие здравоохранения.</p>
+          </div>
+        </div>
+        <div class="news-card reveal">
+          <img src="images/news-3.jpg" alt="" class="news-card-img">
+          <div class="news-card-content">
+            <div class="news-card-tags">
+              <span class="news-tag">ЗДОРОВЬЕ</span>
+              <span class="news-tag">21.04.2026</span>
+            </div>
+            <h3 class="news-card-title">Камни в почках: современные методы лечения</h3>
+            <p class="news-card-desc">Обзор малоинвазивных методов удаления камней — от дистанционной литотрипсии до перкутанных операций.</p>
+          </div>
+        </div>
+        <div class="news-card reveal">
+          <img src="images/news-4.jpg" alt="" class="news-card-img">
+          <div class="news-card-content">
+            <div class="news-card-tags">
+              <span class="news-tag">ТЕХНОЛОГИИ</span>
+              <span class="news-tag">15.03.2026</span>
+            </div>
+            <h3 class="news-card-title">Внедрение технологии Rezum для лечения ДГПЖ</h3>
+            <p class="news-card-desc">Центр начал применять инновационную методику терапии водяным паром.</p>
+          </div>
+        </div>
+        <div class="news-card reveal">
+          <img src="images/news-5.jpg" alt="" class="news-card-img">
+          <div class="news-card-content">
+            <div class="news-card-tags">
+              <span class="news-tag">ОПЕРАЦИЯ</span>
+              <span class="news-tag">28.02.2026</span>
+            </div>
+            <h3 class="news-card-title">Робот-ассистированная операция по удалению опухоли почки</h3>
+            <p class="news-card-desc">Успешно проведена сложная операция с применением хирургического робота da Vinci.</p>
+          </div>
+        </div>
+        <div class="news-card reveal">
+          <img src="images/news-6.jpg" alt="" class="news-card-img">
+          <div class="news-card-content">
+            <div class="news-card-tags">
+              <span class="news-tag">КОНФЕРЕНЦИЯ</span>
+              <span class="news-tag">10.02.2026</span>
+            </div>
+            <h3 class="news-card-title">Участие в международном урологическом конгрессе</h3>
+            <p class="news-card-desc">Врачи центра представили доклады о результатах применения HoLEP при аденоме простаты.</p>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:40px;">
+        <a href="news.html" class="btn btn-outline-blue">Все новости</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / CONTACT -->
+  <section class="cta-section">
+    <div class="cta-inner">
+      <div class="cta-top">
+        <div class="cta-left">
+          <div class="cta-label">СВЯЗЬ</div>
+          <h2 class="cta-heading">Запишитесь на консультацию</h2>
+          <p class="cta-subtext">Консультацию можно получить в рабочий день с 10 до 16 часов по предварительной записи. Бесплатное лечение при наличии полиса обязательного страхования (ОМС).</p>
+          <a href="tel:+78125761157" class="cta-phone">+7 (812) 57-611-57</a>
+          <div style="margin-top:20px;display:flex;gap:12px;flex-wrap:wrap;">
+            <a href="tel:+78125761157" class="btn btn-blue">Позвонить</a>
+            <a href="mailto:info@lucaclinic.ru" class="btn btn-outline-blue">Написать</a>
+          </div>
+        </div>
+        <div class="cta-right">
+          <div class="cta-info-card reveal">
+            <div class="cta-info-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+            </div>
+            <h4>Онлайн-консультация</h4>
+            <p>Видеоконсультация с главным врачом Поповым С.В. по предварительной записи.</p>
+          </div>
+          <div class="cta-info-card reveal">
+            <div class="cta-info-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <h4>Приём главного врача</h4>
+            <p>Личный приём Попова С.В. — вт и чт с 14:00 до 16:00. Запись по телефону или через регистратуру.</p>
+          </div>
+          <div class="cta-info-card reveal">
+            <div class="cta-info-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.59.22 1.2.29 1.83a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.63.07 1.24.16 1.83.29A2 2 0 0 1 21 16.92z"/></svg>
+            </div>
+            <h4>Экстренная помощь</h4>
+            <p>Круглосуточно +7 (812) 57-611-57. Урологическое отделение, 2 этаж, ул. Чугунная, д. 46.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid footer-grid-4">
+      <div>
+        <a href="index.html"><img src="images/logo.png" alt="" class="footer-logo" style="margin-bottom:16px;"></a>
+        <p style="font-size:14px;color:rgba(255,255,255,0.6);margin-bottom:16px;line-height:1.6;">
+          Высокотехнологичная помощь при заболеваниях урологического профиля. Бесплатное лечение по ОМС.
+        </p>
+        <p style="font-size:14px;color:var(--text-blue-light);">+7 (812) 57-611-57</p>
+        <p style="font-size:14px;color:rgba(255,255,255,0.5);margin-top:8px;">info@lucaclinic.ru</p>
+      </div>
+      <div>
+        <h4 class="footer-nav-title">Навигация</h4>
+        <ul class="footer-nav-links">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="directions.html">Направления</a></li>
+          <li><a href="doctors.html">Врачи</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="chief.html">Главный врач</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-nav-title">Направления</h4>
+        <ul class="footer-nav-links">
+          <li><a href="directions.html#dgpzh">ДГПЖ</a></li>
+          <li><a href="directions.html#urolithiasis">Мочекаменная болезнь</a></li>
+          <li><a href="directions.html#oncology">Онкоурология</a></li>
+          <li><a href="directions.html#robot">Роботическая хирургия</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-nav-title">Контакты</h4>
+        <ul class="footer-nav-links">
+          <li>Санкт-Петербург, ул. Чугунная д.46</li>
+          <li>Урологическое отделение, 2 этаж</li>
+          <li style="margin-top:12px;color:var(--text-blue-light);">+7 (812) 57-611-57 (круглосуточно)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copyright">&copy; 2026 Городской центр эндоскопической урологии и новых технологий Санкт-Петербурга</span>
+      <span class="footer-copyright">СПб ГБУЗ &laquo;Клиническая больница Святителя Луки&raquo;</span>
+    </div>
+  </footer>
+
+  <script src="script.js?v=3"></script>
+</body>
+</html>

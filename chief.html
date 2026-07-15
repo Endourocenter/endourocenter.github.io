@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главный врач — Городской центр эндоскопической урологии</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-left">
+      <a href="index.html"><img src="images/logo.png" alt="Логотип" class="header-logo"></a>
+      <span class="header-brand"><a href="index.html">Городской центр эндоскопической урологии и новых технологий Санкт-Петербурга</a></span>
+    </div>
+    <nav class="header-nav">
+      <a href="index.html" class="nav-link">Главная</a>
+      <a href="directions.html" class="nav-link">Направления</a>
+      <a href="doctors.html" class="nav-link">Врачи</a>
+      <a href="news.html" class="nav-link">Новости</a>
+      <a href="chief.html" class="nav-link active">Главный внешний специалист</a>
+    </nav>
+    <div class="header-right">
+      <a href="tel:+78125761157" class="header-phone">+7 (812) 57-611-57</a>
+      <a href="tel:+78125761157" class="btn btn-white">Записаться</a>
+      <button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header" style="background:linear-gradient(180deg, #0d1f3c 0%, var(--bg-dark) 100%);">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Главная</a> / Главный врач</div>
+    </div>
+  </div>
+
+  <!-- PROFILE -->
+  <section class="chief-profile-section" style="position:relative; overflow:hidden;">
+    <div class="bg-graphics">
+      <div class="bg-circle bg-circle-1" style="width:500px;height:500px;top:-100px;right:-100px;"></div>
+      <div class="bg-circle bg-circle-2" style="width:350px;height:350px;bottom:10%;left:-120px;"></div>
+      <div class="bg-circle bg-circle-3" style="width:180px;height:180px;top:45%;right:25%;background:rgba(107,184,255,0.03);"></div>
+      <div class="bg-line bg-line-1" style="width:50%;top:35%;left:25%;"></div>
+      <div class="bg-line bg-line-2" style="width:35%;bottom:20%;right:15%;"></div>
+      <div class="bg-dot bg-dot-1" style="top:18%;left:12%;"></div>
+      <div class="bg-dot bg-dot-2" style="top:55%;right:18%;"></div>
+      <div class="bg-dot bg-dot-3" style="bottom:25%;left:38%;"></div>
+    </div>
+
+    <div class="chief-grid" style="position:relative; z-index:2;">
+      <!-- Left column: portrait + gallery -->
+      <div class="reveal">
+        <div class="chief-photo-wrap">
+          <img src="images/popov-portrait.png" alt="Попов Сергей Валерьевич" class="chief-photo-main">
+        </div>
+        <img src="images/popov-monitor.jpg" alt="Попов Сергей Валерьевич за работой" class="chief-photo-secondary">
+
+        <!-- Gallery with lightbox -->
+        <div class="chief-gallery">
+          <h4 class="chief-gallery-title">Галерея</h4>
+          <div class="chief-gallery-grid">
+            <img src="images/surgery.jpg" alt="Операция" class="chief-gallery-img" onclick="openLightbox(0)">
+            <img src="images/robot-surgery.jpg" alt="Робот-хирургия" class="chief-gallery-img" onclick="openLightbox(1)">
+            <img src="images/hero-surgery.jpg" alt="Операционная" class="chief-gallery-img" onclick="openLightbox(2)">
+            <img src="images/gallery-1.jpg" alt="Галерея 1" class="chief-gallery-img" onclick="openLightbox(4)">
+            <img src="images/gallery-2.jpg" alt="Галерея 2" class="chief-gallery-img" onclick="openLightbox(5)">
+            <img src="images/gallery-3.jpg" alt="Галерея 3" class="chief-gallery-img" onclick="openLightbox(6)">
+          </div>
+        </div>
+      </div>
+
+      <!-- Right column: info -->
+      <div class="reveal">
+        <h1 class="chief-name">Попов Сергей Валерьевич</h1>
+        <span class="chief-degree">Доктор медицинских наук</span>
+        <p class="chief-title">Главный врач Клинической Больницы "Святителя Луки", руководитель центра</p>
+        <div class="chief-divider"></div>
+
+        <div class="chief-info-block">
+          <h3>О руководителе</h3>
+          <p>Сергей Валерьевич Попов — опытный руководитель и высококвалифицированный специалист в области здравоохранения. Под его руководством Клиническая больница "Святителя Луки" стала одним из ведущих медицинских учреждений Санкт-Петербурга, оказывающих высокотехнологичную урологическую помощь.</p>
+        </div>
+
+        <div class="chief-info-block">
+          <h3>Руководство центром</h3>
+          <p>Центр эндоскопической урологии и новых технологий создан по Распоряжению Комитета по здравоохранению Администрации Санкт-Петербурга. Под руководством Сергея Валерьевича центр активно развивает направления робот-ассистированной хирургии, лазерных технологий и малоинвазивного лечения урологических заболеваний.</p>
+        </div>
+
+        <div class="chief-subsection-title">СПЕЦИАЛИЗАЦИЯ</div>
+        <ul class="chief-list">
+          <li>Эндоскопическая урология</li>
+          <li>Лапароскопическая хирургия</li>
+          <li>Онкоурология</li>
+          <li>Робот-ассистированная хирургия</li>
+        </ul>
+
+        <div class="chief-subsection-title">НАУЧНАЯ ДЕЯТЕЛЬНОСТЬ</div>
+        <p class="chief-about">
+          Автор более 80 научных работ, включая публикации в ведущих российских и зарубежных журналах.
+          Руководитель научно-исследовательских проектов в области малоинвазивной урологии. Эксперт
+          документального фильма «ИИ будущего» о применении искусственного интеллекта в медицине.
+        </p>
+
+        <div class="chief-subsection-title">ОБРАЗОВАНИЕ</div>
+        <p class="chief-about">
+          Северо-Западный государственный медицинский университет им. И.И. Мечникова.
+          Специализированная подготовка в области эндоурологии и лапароскопической хирургии.
+          Заслуженный врач Российской Федерации, главный уролог Санкт-Петербурга.
+        </p>
+
+        <div class="chief-divider"></div>
+
+        <div class="chief-info-block">
+          <h3>Ключевые направления развития</h3>
+          <ul>
+            <li>Внедрение робот-ассистированной хирургической системы da Vinci</li>
+            <li>Развитие лазерных технологий в урологии (HoLEP)</li>
+            <li>Создание программы трансплантации почки</li>
+            <li>Развитие онкоурологического направления</li>
+            <li>Обучение молодых специалистов и ординаторов</li>
+            <li>Научно-исследовательская деятельность центра</li>
+          </ul>
+        </div>
+
+        <!-- Consultation block -->
+        <div class="chief-consult">
+          <div class="chief-consult-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+          </div>
+          <div class="chief-consult-content">
+            <h4>Онлайн-консультация с главным врачом</h4>
+            <p>Видеоконсультация Попова С.В. — вторник и четверг с 14:00 до 16:00. Запись по телефону +7 (812) 57-611-57 или через регистратуру.</p>
+            <div class="chief-consult-tags">
+              <span class="chief-consult-tag">Вторник 14:00&#8211;16:00</span>
+              <span class="chief-consult-tag">Четверг 14:00&#8211;16:00</span>
+              <span class="chief-consult-tag">По предварительной записи</span>
+            </div>
+            <div style="margin-top:16px; padding-top:16px; border-top:1px solid rgba(107,184,255,0.15);">
+              <div style="display:flex; flex-direction:column; gap:10px;">
+                <div style="display:flex; align-items:center; gap:10px;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6BB8FF" stroke-width="2">
+                    <path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                  </svg>
+                  <span style="font-size:14px;color:rgba(0, 0, 0, 0.7);">Видео-консультация доступна</span>
+                </div>
+                <div style="display:flex; align-items:center; gap:10px;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6BB8FF" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                    <line x1="16" y1="2" x2="16" y2="6"/>
+                    <line x1="8" y1="2" x2="8" y2="6"/>
+                    <line x1="3" y1="10" x2="21" y2="10"/>
+                  </svg>
+                  <span style="font-size:14px;color:rgba(0, 0, 0, 0.7);">Личный приём: вт и чт 14:00&#8211;16:00</span>
+                </div>
+                <div style="display:flex; align-items:center; gap:10px;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6BB8FF" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.59.22 1.2.29 1.83a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.63.07 1.24.16 1.83.29A2 2 0 0 1 21 16.92z"/>
+                  </svg>
+                  <span style="font-size:14px;color:rgba(0, 0, 0, 0.7);">+7 (812) 57-611-57</span>
+                </div>
+              </div>
+            </div>
+            <a href="tel:+78125761157" class="btn btn-blue" style="margin-top:16px;">Записаться на консультацию</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-section">
+    <h2 class="reveal" style="text-align:center; margin-bottom:60px; font-size:clamp(28px,3vw,40px); font-weight:300;">Центр в цифрах</h2>
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <div class="stat-number">80+</div>
+          <div class="stat-label">Научных публикаций</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-number">374</div>
+          <div class="stat-label">Коек в больнице</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-number">30+</div>
+          <div class="stat-label">Врачей-урологов</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-number">2009</div>
+          <div class="stat-label">Год основания центра</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPUTY SECTION — Vertical cards in row -->
+  <section class="section" style="background:var(--bg-darker); padding-bottom:140px;">
+    <div class="container">
+      <div class="section-label reveal" style="justify-content:center;">Научное руководство</div>
+      <h2 class="reveal" style="text-align:center; font-size:clamp(28px,3vw,40px); font-weight:300; margin-bottom:60px;">Научный руководитель и заместители</h2>
+      <div class="leadership-row">
+
+        <div class="leader-card-vertical reveal">
+          <div class="leader-card-vertical-photo">
+            <span class="leader-card-vertical-initials">СОН</span>
+          </div>
+          <div class="leader-card-vertical-info">
+            <h3>Скрябин Олег Николаевич</h3>
+            <p>Научный руководитель Центра</p>
+          </div>
+        </div>
+
+        <div class="leader-card-vertical reveal">
+          <div class="leader-card-vertical-photo">
+            <span class="leader-card-vertical-initials">ГРГ</span>
+          </div>
+          <div class="leader-card-vertical-info">
+            <h3>Гусейнов Руслан Гусейнович</h3>
+            <p>Зам. главного врача по научной деятельности</p>
+            <span class="leader-degree">К.М.Н.</span>
+          </div>
+        </div>
+
+        <div class="leader-card-vertical reveal">
+          <div class="leader-card-vertical-photo">
+            <span class="leader-card-vertical-initials">ТТ</span>
+          </div>
+          <div class="leader-card-vertical-info">
+            <h3>Топузов Тимур Марленович</h3>
+            <p>Заведующий отделением урологии &#8470;1</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MRI EQUIPMENT -->
+  <section class="section" style="background:var(--bg-dark); position:relative; overflow:hidden;">
+    <div class="section-bg-glow"></div>
+    <div class="bg-graphics">
+      <div class="bg-circle bg-circle-1" style="width:400px;height:400px;top:-100px;right:-100px;"></div>
+      <div class="bg-dot bg-dot-1" style="top:30%;left:10%;"></div>
+      <div class="bg-dot bg-dot-2" style="bottom:25%;right:15%;"></div>
+    </div>
+    <div class="container" style="position:relative;z-index:1">
+      <div class="about-grid">
+        <div class="about-content reveal">
+          <span class="section-label">Оборудование</span>
+          <h2>Современная диагностическая база</h2>
+          <p>Клиническая больница оснащена передовым медицинским оборудованием, позволяющим проводить точную диагностику и эффективное лечение самых сложных случаев.</p>
+          <p>В распоряжении центра находятся робот-хирург da Vinci, лазерные литотрипторы, современные эндоскопические системы, аппараты МРТ и КТ экспертного класса.</p>
+          <div class="about-info-box">
+            <p><strong>Операционные блоки</strong> оснащены в соответствии с международными стандартами</p>
+          </div>
+        </div>
+        <div class="about-image reveal">
+          <img src="images/grok-image-22.png" alt="Диагностическое оборудование">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDATION PHOTOS -->
+  <section class="section" style="background:var(--bg-darker); padding-bottom:140px;">
+    <div class="container">
+      <div class="section-label reveal" style="justify-content:center;">Наша история</div>
+      <h2 class="reveal" style="text-align:center; font-size:clamp(28px,3vw,40px); font-weight:300; margin-bottom:60px;">Центр в фотографиях</h2>
+      <div class="directions-grid" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="direction-card reveal" style="border:none; background:transparent;">
+          <img src="images/foundation-1.jpg" alt="Фото 1" class="direction-card-img" style="height:250px; border-radius:12px;">
+        </div>
+        <div class="direction-card reveal" style="border:none; background:transparent;">
+          <img src="images/popov-monitor.jpg" alt="Фото 2" class="direction-card-img" style="height:250px; border-radius:12px;">
+        </div>
+        <div class="direction-card reveal" style="border:none; background:transparent;">
+          <img src="images/foundation-3.jpg" alt="Фото 3" class="direction-card-img" style="height:250px; border-radius:12px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-inner">
+      <div class="cta-top">
+        <div class="cta-left">
+          <div class="cta-label">СВЯЗЬ</div>
+          <h2 class="cta-heading">Запишитесь на консультацию</h2>
+          <p class="cta-subtext">Консультацию можно получить в рабочий день с 10 до 16 часов по предварительной записи.</p>
+          <a href="tel:+78125761157" class="cta-phone">+7 (812) 57-611-57</a>
+          <div style="margin-top:20px;display:flex;gap:12px;flex-wrap:wrap;">
+            <a href="tel:+78125761157" class="btn btn-blue">Позвонить</a>
+            <a href="mailto:info@lucaclinic.ru" class="btn btn-outline-blue">Написать</a>
+          </div>
+        </div>
+        <div class="cta-right">
+          <div class="cta-info-card reveal">
+            <div class="cta-info-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#6BB8FF" stroke-width="2"><path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+            </div>
+            <h4>Онлайн-консультация</h4>
+            <p>Видеоконсультация с главным врачом по предварительной записи.</p>
+          </div>
+          <div class="cta-info-card reveal">
+            <div class="cta-info-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#6BB8FF" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <h4>Приём главного врача</h4>
+            <p>Вт и чт с 14:00 до 16:00. Запись по телефону.</p>
+          </div>
+          <div class="cta-info-card reveal">
+            <div class="cta-info-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#6BB8FF" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.59.22 1.2.29 1.83a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.63.07 1.24.16 1.83.29A2 2 0 0 1 21 16.92z"/></svg>
+            </div>
+            <h4>Экстренная помощь</h4>
+            <p>Круглосуточно +7 (812) 57-611-57.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid footer-grid-4">
+      <div>
+        <a href="index.html"><img src="images/logo.png" alt="" class="footer-logo" style="margin-bottom:16px;"></a>
+        <p style="font-size:14px;color:rgba(255,255,255,0.6);margin-bottom:16px;line-height:1.6;">
+          Высокотехнологичная помощь при заболеваниях урологического профиля. Бесплатное лечение по ОМС.
+        </p>
+        <p style="font-size:14px;color:var(--text-blue-light);">+7 (812) 57-611-57</p>
+        <p style="font-size:14px;color:rgba(255,255,255,0.5);margin-top:8px;">info@lucaclinic.ru</p>
+      </div>
+      <div>
+        <h4 class="footer-nav-title">Навигация</h4>
+        <ul class="footer-nav-links">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="directions.html">Направления</a></li>
+          <li><a href="doctors.html">Врачи</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="chief.html">Главный врач</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-nav-title">Направления</h4>
+        <ul class="footer-nav-links">
+          <li><a href="directions.html#dgpzh">ДГПЖ</a></li>
+          <li><a href="directions.html#urolithiasis">Мочекаменная болезнь</a></li>
+          <li><a href="directions.html#oncology">Онкоурология</a></li>
+          <li><a href="directions.html#robot">Роботическая хирургия</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-nav-title">Контакты</h4>
+        <ul class="footer-nav-links">
+          <li>Санкт-Петербург, ул. Чугунная д.46</li>
+          <li>Урологическое отделение, 2 этаж</li>
+          <li style="margin-top:12px;color:var(--text-blue-light);">+7 (812) 57-611-57 (круглосуточно)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copyright">&copy; 2026 Городской центр эндоскопической урологии и новых технологий Санкт-Петербурга</span>
+      <span class="footer-copyright">СПб ГБУЗ &laquo;Клиническая больница Святителя Луки&raquo;</span>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+    <span class="lightbox-close" onclick="closeLightboxForce()">&times;</span>
+    <button class="lightbox-prev" onclick="navLightbox(-1, event)">&#8249;</button>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+    <span class="lightbox-caption" id="lightbox-caption"></span>
+    <button class="lightbox-next" onclick="navLightbox(1, event)">&#8250;</button>
+  </div>
+
+  <script src="script.js?v=3"></script>
+  <script>
+    // Lightbox data
+    const galleryImages = [
+      { src: 'images/surgery.jpg', alt: 'Операция' },
+      { src: 'images/robot-surgery.jpg', alt: 'Робот-хирургия' },
+      { src: 'images/hero-surgery.jpg', alt: 'Операционная' },
+      { src: 'images/scientific.jpg', alt: 'Научная деятельность' },
+      { src: 'images/gallery-1.jpg', alt: 'Галерея 1' },
+      { src: 'images/gallery-2.jpg', alt: 'Галерея 2' },
+      { src: 'images/gallery-3.jpg', alt: 'Галерея 3' }
+    ];
+    let currentLightboxIndex = 0;
+
+    function openLightbox(index) {
+      currentLightboxIndex = index;
+      document.getElementById('lightbox-img').src = galleryImages[index].src;
+      document.getElementById('lightbox-caption').textContent = galleryImages[index].alt;
+      document.getElementById('lightbox').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox(event) {
+      if (event.target.id === 'lightbox') {
+        document.getElementById('lightbox').classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+
+    function closeLightboxForce() {
+      document.getElementById('lightbox').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    function navLightbox(dir, event) {
+      event.stopPropagation();
+      currentLightboxIndex = (currentLightboxIndex + dir + galleryImages.length) % galleryImages.length;
+      document.getElementById('lightbox-img').src = galleryImages[currentLightboxIndex].src;
+      document.getElementById('lightbox-caption').textContent = galleryImages[currentLightboxIndex].alt;
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', function(e) {
+      if (!document.getElementById('lightbox').classList.contains('active')) return;
+      if (e.key === 'Escape') closeLightboxForce();
+      if (e.key === 'ArrowLeft') navLightbox(-1, { stopPropagation: function(){} });
+      if (e.key === 'ArrowRight') navLightbox(1, { stopPropagation: function(){} });
+    });
+  </script>
+</body>
+</html>
